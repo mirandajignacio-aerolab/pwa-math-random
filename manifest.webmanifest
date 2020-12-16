@@ -1,30 +1,34 @@
 {
-  "short_name": "Weather",
-  "name": "Weather: Do I need an umbrella?",
-  "description": "Weather forecast information",
+  "short_name": "Milanesapp",
+  "name": "Milanesapp: The best milanga app",
+  "description": "Eat this",
   "icons": [{
-    "src": "assets/images/homescreen/homescreen48.png",
+    "src": "assets/images/homescreen48.png",
     "sizes": "48x48",
     "type": "image/png"
   }, {
-    "src": "assets/images/homescreen/homescreen72.png",
+    "src": "assets/images/homescreen72.png",
     "sizes": "72x72",
     "type": "image/png"
   }, {
-    "src": "assets/images/homescreen/homescreen96.png",
+    "src": "assets/images/homescreen96.png",
     "sizes": "96x96",
     "type": "image/png"
   }, {
-    "src": "assets/images/homescreen/homescreen144.png",
+    "src": "assets/images/homescreen144.png",
     "sizes": "144x144",
     "type": "image/png"
   }, {
-    "src": "assets/images/homescreen/homescreen168.png",
+    "src": "assets/images/homescreen168.png",
     "sizes": "168x168",
     "type": "image/png"
   }, {
-    "src": "assets/images/homescreen/homescreen192.png",
+    "src": "assets/images/homescreen192.png",
     "sizes": "192x192",
+    "type": "image/png"
+  }, {
+    "src": "assets/images/homescreen512.png",
+    "sizes": "512x512",
     "type": "image/png"
   }],
   "start_url": "/?source=pwa",

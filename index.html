@@ -1,21 +1,33 @@
 <html>
   <head>
     <link rel="manifest" href="/manifest.webmanifest" >
+    <link rel="apple-touch-icon" href="/assets/images/homescreen48.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/homescreen144.png" />
+    <link rel="apple-touch-icon" sizes="168x168" href="/assets/images/homescreen168.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/assets/images/homescreen192.png" />
+    <link rel="apple-touch-startup-image" href="/assets/images/homescreen192.png" />
+    <meta name="apple-mobile-web-app-title" content="Milanesapp" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link href="/styles/index.css" rel="stylesheet" >
     <link href="/styles/normalize.css" rel="stylesheet" >
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;500&display=swap" rel="stylesheet">
   </head>
   <body>
-    
-    <img src="./assets/images/homescreen/homescreen192.png" alt="img" />
+    <h1>Milanesapp</h1>
+    <img src="./assets/images/homescreen192.png" alt="img" />
     <script src="./index.js">
     </script>
-    <script text="html" >
-      navigator.serviceWorker.register('/service-worker.js')
-        .then(reg => console.log('SW registered!', reg))
-        .catch(err => console.log('Boo!', err));
-  
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then(function(registration) {
+              console.log('ServiceWorker registration successful');
+          }, 
+          function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
     </script>
   </body>
 </html>
