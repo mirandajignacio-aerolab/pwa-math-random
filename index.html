@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <link rel="manifest" href="/manifest.webmanifest" >
+    <link href="/styles/index.css" rel="stylesheet" >
+    <link href="/styles/normalize.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <img src="./assets/images/homescreen/homescreen192.png" alt="img" />
+    <script src="./index.js">
+    </script>
+    <script text="html" >
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log('SW registered!', reg))
+        .catch(err => console.log('Boo!', err));
+  
+    </script>
+  </body>
+</html>

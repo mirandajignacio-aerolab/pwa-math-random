@@ -1,0 +1,30 @@
+{
+  "name": "pwa-math-random",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirandajignacio-aerolab/pwa-math-random.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mirandajignacio-aerolab/pwa-math-random/issues"
+  },
+  "homepage": "https://github.com/mirandajignacio-aerolab/pwa-math-random#readme",
+  "dependencies": {
+    "workbox-cacheable-response": "^6.0.2",
+    "workbox-expiration": "^6.0.2",
+    "workbox-routing": "^6.0.2",
+    "workbox-strategies": "^6.0.2"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
